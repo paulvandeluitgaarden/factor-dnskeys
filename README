@@ -1,0 +1,20 @@
+INSTALLATION
+Run install.sh as superuser. An internet connection is required.
+
+RUN THE PROGRAM
+The data set should be a file in the following format:
+
+domain;flag;protocol;algorithm;keylength;modulus;publicexponent
+
+To run the analysis, execute the following command:
+
+./dnskeyprocess.sh <full-path-to-data-set> <full-path-to-dest-dir>
+
+Other files:
+* process.sh   - run fastgcd software over the data set
+* bitrot.sh    - find bitrot in data set
+* convertdb.sh - convert the data set to sqlite3 database format
+* dnskey.py    - calculate private key from factorable moduli
+
+For usage instructions, run the script with no parameters.
+
